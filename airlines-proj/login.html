@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>PROJECT_4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* body nav ul li {
+            text-decoration: none;
+            display: flex;
+        }
+        
+        nav ul{
+           display: flex;
+            text-decoration: none;
+            margin-left: 500px;
+            margin-top: -86px;
+        }
+        
+        nav ul li {
+            margin-right: 40px;
+            font-size: larger;
+            
+        }
+        
+        a:hover {
+            color: rgb(48, 188, 244);
+        }
+        .account{
+            background-color: transparent;
+            font-weight:bold;
+            font-size: 15px;
+        } */
+        .log-image{
+            opacity: 50%;
+        }
+   @keyframes animate{
+       0%{
+           opacity: 0;
+           transform: scale(.5);
+       }
+       100%{
+           opacity: 1;
+           transform: scale(1);
+       }
+   }
+    </style>
+</head>
+
+<body>
+    <img src="logo.png" height="150px">
+    <nav class="navbar">
+        <ul class="nav-list" >
+            <li class="nav-item"><a href="home.html"  class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="about.html"  class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="airlines.html"  class="nav-link">AIRLINES</a></li>
+            <li class="nav-item"><a href="contact.html"  class="nav-link">CONTACT</a></li>
+            <li class="nav-item"><a href="registration.html"  class="nav-link">SIGNIN</a></li>
+            <li class="nav-item"><a href="login.html"  class="nav-link">LOGIN</a></li>
+        </ul>
+    </nav>
+    <div class="log-image">
+        <img src="log-img.png" height="100%" width="100%">
+    </div>
+        <div style="animation: 1s animate ease-in-out;" class="log-container">
+            <center><h2>Login</h2></center>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username"><ion-icon name="person-sharp"></ion-icon>Username:</label>
+                    <input style="width: 90%; margin-left:10px" type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><ion-icon name="lock-closed"></ion-icon>Password:</label>
+                    <input style="width: 90%; margin-left:10px" type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="message"></p>
+            <pre class="account">   Don't have an account? <a href="registration.html">Register here</a></pre>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+
+</html>

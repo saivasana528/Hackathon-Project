@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>PROJECT_4</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style1.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <style>
+            .reg-img{
+                opacity: 50%;
+            }
+            @keyframes animate{
+                0%{
+                    opacity: 0;
+                    transform: scale(.5);
+                }
+                100%{
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <img class="logo" src="logo.png" height="150px">
+        <nav class="navbar">
+            <ul class="nav-list" >
+                <li class="nav-item"><a href="home.html"  class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="about.html"  class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="airlines.html"  class="nav-link">AIRLINES</a></li>
+                <li class="nav-item"><a href="contact.html"  class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="registration.html"  class="nav-link">SIGNIN</a></li>
+                <li class="nav-item"><a href="login.html"  class="nav-link">LOGIN</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="reg-img" >
+        <img src="reg-img.png" alt=""height="100%" width="100%">
+    </div>
+    <div style="animation: 1s animate ease-in-out;" class="reg-container">
+        <center><h2> Register</h2></center>
+        <form id="registerForm">
+            <div class="reg-form-group">
+                <label for="newUsername"><ion-icon name="person-sharp"></ion-icon>Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+            </div>
+            <div class="reg-form-group">
+                <label for="newPassword"><ion-icon name="lock-closed"></ion-icon>Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            <div class="reg-form-group">
+                <label for="confirmnewPassword"><ion-icon name="lock-closed"></ion-icon>Confirm Password:</label>
+                <input type="pass" id="confirmnewPassword" name="confirmnewPassword" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p id="message"></p>
+        <pre class="account">    Already have an account? <a href="login.html">Login here</a></pre>
+    </div>
+   
+    <script src="registration.js"></script>
+    </body>
+</html>

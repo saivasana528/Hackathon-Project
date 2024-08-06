@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>PROJECT_4</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="style.css">
+        <style>
+            
+            body nav ul li {
+                text-decoration: none;
+                display: flex;
+            }
+            
+            nav ul{
+               display: flex;
+                text-decoration: none;
+                margin-left: 500px;
+                margin-top: -86px;
+            }
+            
+            nav ul li {
+                margin-right: 40px;
+                font-size: larger;
+                
+            }
+            
+            a:hover {
+                color: rgb(48, 188, 244);
+            }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.cardpx-4{
+    border: 2px solid black;
+    width: 395px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.containerp-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0C4160;
+    padding: 30px 10px;
+    background-image:url(payment.png); 
+    background-repeat:no-repeat;
+    background-size:cover; 
+}
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    border-radius: 20 px;
+}
+
+p {
+    margin: 0px;
+}
+
+.container .h8 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.btn.btn-primary {
+    width: 61%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    margin-left: 82px;
+    margin-top: 10px;
+}
+
+
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+.form-control {
+    color: white;
+    background-color: #223C60;
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #0C4160;
+    border: 2px solid #2d4dda;
+    box-shadow: none;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+.ps-3{
+    padding: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+        </style>
+    </head>
+    <body>
+        <img src="logo.png" height="150px">
+        <nav class="navbar">
+            <ul class="nav-list" >
+                <li class="nav-item"><a href="home.html"  class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="about.html"  class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="airlines.html"  class="nav-link">AIRLINES</a></li>
+                <li class="nav-item"><a href="contact.html"  class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="registration.html"  class="nav-link">SIGNIN</a></li>
+                <li class="nav-item"><a href="login.html"  class="nav-link">LOGIN</a></li>
+            </ul>
+        </nav>
+        <div class="containerp-0">
+            <div class="cardpx-4">
+                <center><h1 class="h8 py-3">Payment Details</h1></center> 
+                <div class="row gx-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="person"></ion-icon>Person Name</p>
+                            <input class="form-control mb-3" type="text" placeholder="Name" value="abcd efgh">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="card"></ion-icon>Card Number</p>
+                            <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="alert"></ion-icon>Expiry</p>
+                            <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1"><ion-icon name="lock-closed"></ion-icon>CVV</p>
+                            <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn btn-primary mb-3">
+                            <a class="ps-3" href="payment-success.html">Pay Now</a>
+                            <span class="fas fa-arrow-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
